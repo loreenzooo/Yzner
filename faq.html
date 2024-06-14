@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="faq.html">
+	<link rel="stylesheet" href="css1/all.min.css">
+    <link rel="stylesheet" href="css1/fontawesome.min.css">		
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-image: url(back.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: 'Montserrat', sans-serif;
+			overflow: scroll;
+		}
+
+		.accordion {
+
+			color: rgb(31, 29, 29);
+			cursor: pointer;
+			padding: 20px;
+			width: 50%;
+			border-color: silver;
+			text-align: center;
+			outline: none;
+			font-size: 20px;
+			transition: 0.4s;
+			background-color: rgb(133, 131, 131);
+			border-radius: 30px;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: rgb(185, 185, 185);
+		}
+
+		.panel {
+
+			display: none;
+			height: 50px;
+			width: 100%;
+			background-color: black;
+			color: white;
+			overflow: hidden;
+			text-align: center;
+			border-radius: 60px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+		}
+
+		a {
+			text-decoration: transparent;
+		}
+
+		.navbar img{
+    float:left;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+    /*
+    .LoginBtn{
+        display: none;
+    }
+   
+    img{
+        display: none;
+    }
+    */
+  }
+
+
+		h2 {
+			font-family: Gill Sans', ' Gill Sans MT', Calibri, ' Trebuchet MS', 'sans-serif';
+		}
+
+		footer{
+    background-color: #111;
+    margin-top:90px;
+	width: 100%;
+	overflow-x: hidden;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="" style="background-color:black">GO SHOP</a>
+		<a href="C:\Users\laurence\OneDrive\Desktop\.NET Website\MyCodes\.netWebsite\.netWebsite\index.html" >Home</a>
+		<a href="C:\Users\laurence\OneDrive\Desktop\.NET Website\MyCodes\.netWebsite\.netWebsite\shopping-cart-app\merch\index.html" target="_blank"> CART</a>
+		<a href="C:\Users\laurence\OneDrive\Desktop\.NET Website\MyCodes\.netWebsite\.netWebsite\about.html"> ABOUT</a>
+		<a href="C:\Users\laurence\OneDrive\Desktop\.NET Website\MyCodes\.netWebsite\.netWebsite\faq.html" style="background-color: #04AA6D;"> FAQ</a>
+		<a href="C:\Users\laurence\OneDrive\Desktop\.NET Website\MyCodes\.netWebsite\.netWebsite\Vintong\blog.html">BLOG</a>
+		<a href="C:\Users\laurence\OneDrive\Desktop\.NET Website\MyCodes\.netWebsite\.netWebsite\edit-profile\index.html">
+			<i class="fa-solid fa-user" id="user"></i>
+		</a>
+	  </div>
+	<center>
+
+	
+
+		</div>
+
+
+		<h2 style="color:#dddddd">Frequently Asked Questions:</h2> <br>
+
+		<button class="accordion">What payment method do you accept?</button>
+		<div class="panel">
+			<p> <br>We accept Credit card, Paymaya, G-cash and Cash on delivery</p>
+		</div>
+
+		<button class="accordion">What is your return policy?</button>
+		<div class="panel">
+			<p>Our return policy allows you to return items within 15 days of purchase for a full refund,prodive they
+				are in thier original condition with tags attached</p>
+
+		</div>
+
+		<button class="accordion">How can i track my order?</button>
+		<div class="panel">
+			<p>Once your order has been shipped, you will receive tracking number via email. You can use this tracking
+				number to monitor the status of your shipment.</p>
+		</div>
+
+		<button class="accordion">Do you offer international shipping?</button>
+		<div class="panel">
+			<p> <br>Yes, we do! We ship worldwide. Shipping fees may vary depending on the destination. </p>
+		</div>
+
+		<button class="accordion"> What are your store hours?</button>
+		<div class="panel">
+			<p>We're open from 10:30AM-5:00PM everyday of the week</p>
+		</div>
+
+		<button class="accordion">Can i modify or cancel my order after it's been placed?</button>
+		<div class="panel">
+			<p> <br>Unfortunately, we're unable to modify or cancel orders once they've been processed. </p>
+		</div>
+
+		<button class="accordion">Who is the CEO in the Company?</button>
+		<div class="panel">
+			<p> <br>Our CEO is Mr. Keith Justine Esparcia</p>
+		</div>
+
+		<button class="accordion">Where's the main store of  GO SHOP?</button>
+		<div class="panel">
+			<p> <br>Our main store is located in Maguikay Mandaue City North Road</p>
+		</div>
+		<button class="accordion">What should i do if i encounter issues with my product transaction?</button>
+		<div class="panel">
+			<p> <br>if you encounter any issues with your product,delayed delivery,wrong item recieved, or payment problems, contact the costumer support immediately.
+				 Provide relevant details and seek assistance to resolve the issue.</p>
+		</div>
+
+		<footer>
+			<div class="footerContainer">
+				<div class="socialIcons">
+				  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+				  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+				  <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+				  <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+				  <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+				<div class="footerNav">
+					<ul><li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">News</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="about.html">Contact Us</a></li>
+						<li><a href="about.html">our Team</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="footerBottom">
+				<p>Copyright &copy;2024</p>
+			</div>
+	
+
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+		</script>
+
+</body>
+
+</html>
