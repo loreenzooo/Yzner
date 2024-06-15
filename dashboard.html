@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+   
+    <div class="admin-header">
+        <h1>Go Shop Admin Panel</h1>
+        <div class="admin-profile">
+           <a href="adminprof.html"><img src="prof2.jpg" alt="Admin Profile Picture" class="profile-pic"> </a>
+            <span class="admin-name">Admin Laurence</span>
+        </div>
+    </div>
+    
+ 
+    <div class="admin-container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#product-page" onclick="showSection('product-page')">Product Page</a></li>
+                <li><a href="#customer-comments" onclick="showSection('customer-comments')">Customer Comments</a></li>
+                <li><a href="#new-customers" onclick="showSection('new-customers')">New Customers</a></li>
+                <li><a href="#login-statistics" onclick="showSection('login-statistics')">Login Statistics</a></li>
+                
+            </ul>
+        </div>
+        
+        
+        <div class="main-content">
+
+
+            
+            <div class="section" id="customer-comments">
+                <h2>Customer Comments</h2>
+                <div id="comments-data"></div>
+            </div>
+            
+            <div class="section" id="new-customers">
+                <h2>New Registered Customers</h2>
+                <div id="customers-data"></div>
+            </div>
+            
+            <div class="section" id="login-statistics">
+                <h2>Login Statistics</h2>
+                <div id="login-data"></div>
+            </div>
+            
+            <div class="section" id="product-page">
+                <h2>Product Page</h2>
+                <div id="products-data">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="dashboard.js"></script>
+</body>
+</html>
